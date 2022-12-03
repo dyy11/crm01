@@ -1,0 +1,61 @@
+package com.dyy.crm.query;
+
+import com.dyy.crm.base.BaseQuery;
+
+
+/**
+ * 营销机会的查询类
+ */
+public class SaleChanceQuery extends BaseQuery {
+
+    //分页参数
+
+    //条件查询
+    private String customerName;    //客户名
+    private String createMan;       //创建人
+    private Integer state;          //分配状态  0 = 未分配  1 = 已分配
+
+    // 客户开发条件查询
+    private Integer assignMan;   // 指派人
+    private String devResult;   // 开发状态
+
+    public Integer getAssignMan() {
+        return assignMan;
+    }
+
+    public void setAssignMan(Integer assignMan) {
+        this.assignMan = assignMan;
+    }
+
+    public String getDevResult() {
+        return devResult;
+    }
+
+    public void setDevResult(String devResult) {
+        this.devResult = devResult;
+    }
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
+    public String getCreateMan() {
+        return createMan;
+    }
+
+    public void setCreateMan(String createMan) {
+        this.createMan = createMan;
+    }
+
+    public Integer getState() {
+        return state;
+    }
+
+    public void setState(Integer state) {
+        this.state = state;
+    }
+}
